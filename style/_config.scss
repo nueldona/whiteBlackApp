@@ -1,0 +1,31 @@
+$whiteColor: #ffffff;
+$grayColor: #f1f1f1;
+$blackColor: #000000;
+$introBg: #fcfcfc;
+$placeHoldr: #adadad;
+$greenColor: #0fc1ce;
+$borderColor:#ecf0f1;
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+@mixin gridColumn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin  largeBtn {
+  padding: .8em 1em;
+  background-color:$blackColor;
+  border: 2px solid $blackColor;
+  transition: .2s;
+  outline: none;
+  cursor: pointer;
+  color: $whiteColor;
+  font-size: 15px;
+}

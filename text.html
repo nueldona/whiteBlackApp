@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flop | sign up</title>
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body >
+  <!-- Onload bg-img -->
+  <section id="bgSplash">
+    <div class="loading__box"></div>
+  </section>
+
+  <!-- login page  -->
+  <section class="login__section" id="loginSection">
+
+    <div class="login__container">
+      <section class="side__view">
+        <h2>Collaborate, monitor and give feedback</h2>
+        <br><br>
+        <div>
+          <b>Log in to posts and provide update.</b>
+        </div>
+      </section>
+      
+      <section class="btn__section">
+        <h2>Black<b>&</b>white</h2>
+        <br><br>
+        <fieldset>
+          <h3>sign in</h3>
+          <br><br>
+          <form action="">
+            <label for="my-input">Email Address</label>
+            <input id="my-input" class="form-control" type="email" name="username" placeholder="example@mail.com">
+            
+            <br>
+            <label for="my-input">Password</label>
+            <input id="my-input" class="form-control" type="password" name="password" placeholder="Password">
+            
+            <br><br>
+            <button id="googleBtn" class="big__btn">
+              Sign in
+            </button>
+            <br>
+
+            <p>No account? <b><a href="#signUp" onclick="createAcc()" >Create one here</a></b></p>
+          </form>          
+        </fieldset>
+        <br><br>
+        <!-- email btn -->
+        <button id="email__btn" class="big__btn">
+          <i></i>
+          Use your email
+        </button>
+      </section>
+    </div>
+  </section>
+
+
+  <!-- sign up  page  -->
+  <section class="login__section" id="signUp">
+
+    <div class="login__container sign--up">
+      
+      <section class="btn__section btn--section">
+        <h2>Black<b>&</b>white</h2>
+        <br><br>
+        <fieldset>
+          <h3>sign up</h3>
+          <br><br>
+          <form action="" aria-required="true">
+            <label for="my-input">Fullname</label>
+            <input id="my-input" class="form-control" type="text" name="username" placeholder="Fullname">
+            
+            <br>
+            <label for="my-input">Email Address</label>
+            <input id="my-input" class="form-control" type="email" name="email" placeholder="example@mail.com">
+
+            <br>
+            <label for="my-input">Password</label>
+            <input id="my-input" class="form-control" type="password" name="password" placeholder="Password">
+            
+            <br>
+            <label for="my-input">Password</label>
+            <input id="my-input" class="form-control" type="password" name="password" placeholder="Password">
+
+            <br><br>
+            <button id="googleBtn" class="big__btn">
+              Sign up
+            </button>
+            <br>
+
+            <p>By signing up, you are agreeing to our Terms & Conditions</p>
+          </form>          
+        </fieldset>
+        <br><br>
+        <!-- email btn -->
+        <button id="email__btn" class="big__btn">
+          <i></i>
+          Use your email
+        </button>
+      </section>
+
+      <section class="side__view side--view">
+        <h2>Collaborate, monitor and give feedback</h2>
+        <br><br>
+        <div>
+          <b>Log in to posts and provide update.</b>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

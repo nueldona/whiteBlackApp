@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bgSplash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: url('./img/f5fdebd76681f917dea073ff91571d22.jpg') no-repeat center center/contain;
+  background-color: $whiteColor;
+  opacity: 1;
+  .loading__box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $borderColor;
+    border-radius: 50px;
+    border-top: 2px solid $blackColor;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    animation: 1s spin infinite ease-in-out;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg);}
+}
+#bgSplash.fade {
+  display: none;
+}
+
+.login__section {
+  width: 100%;
+  height: 100vh;
+  background-color: $whiteColor;
+
+  .login__container {
+    height: inherit;
+    background-color: $whiteColor;
+    @include gridColumn ();
+
+    .side__view {
+      height: 100%;
+      background: url('./img/water-clings-to-evergreen-tree.jpg') no-repeat center center/cover;
+      color: $whiteColor;
+      padding: 19em .7em 2em 4em;
+      border-right: 1px solid $borderColor;
+      box-shadow: 1px 2px 16px 6px $borderColor;
+      clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+
+      h2{
+        font-size: 50px;
+      }
+      div {
+        background-color: $whiteColor;
+        padding: .6em .7em;
+        width: 48%;
+        color: $blackColor;
+        font-size: 17px;
+      }
+    }
+
+    .btn__section {
+      padding: 6em 8em 0em 8em ;
+      text-align: center;
+
+      fieldset {
+        border-top: 4px solid $blackColor;
+        border-left: 1px solid $borderColor;
+        border-right: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+        box-shadow: 1px 2px 16px 6px $borderColor;
+        border-radius: 5px;
+        padding: 2rem 2rem;
+        
+
+        form {
+          @include flexColumn ();
+          input {
+            border: none;
+            background-color: $borderColor;
+            padding: 1em 1em;
+            outline: none;
+            font-size: 15px;
+            &:active {
+              background-color: $borderColor;
+            }
+            &::placeholder {
+              color: $placeHoldr;
+            }
+          }
+          label {
+            text-align: left;
+            margin-bottom: 7px;
+          }
+          button {
+            @include largeBtn();
+          }
+          p {
+            font-size: 12px;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      #email__btn {
+        @include largeBtn();
+        border-radius: 50px;
+        background-color: transparent;
+        color: $blackColor;
+        padding: .9em 3em;
+      }
+    }
+  }
+}
+
+#signUp {
+  display: none;
+}
+.sign--up {
+  .side--view {
+    background: url('./img/austin-neill-ZahNAl_Ic3o-unsplash.jpg') no-repeat center center/cover !important;
+    padding: 20em .7em 6em 4em !important;
+    border-left: 1px solid $borderColor !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%) !important;
+  }
+  .btn--section {
+    padding: 5em 8em 3em 8em !important;
+  }  
+}
+
+
